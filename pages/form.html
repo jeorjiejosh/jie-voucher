@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎄 Jeorjie Voucher</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="music-control">
+    <button id="musicToggle" class="music-btn">🔇</button>
+    <audio id="backgroundMusic" loop autoplay>
+      <source src="../assets/jingle-bell-rock.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+  <div class="card">
+    <h1>🎉 <span class="gradient-text">Surprise!</span> 🎉</h1>
+    <h2>🎁 You've won a $5 <span class="gradient-text"> <br /> Jeorjie Voucher</span> 🎁</h2>
+
+    <!-- Optional wacky photo -->
+    <img src="../assets/your-gif.gif" alt="Wacky Me" class="photo" />
+
+    <p class="subtitle">✨ Time to cash in on this chaos! ✨</p>
+
+    <form id="voucherForm" name="voucher" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="voucher" />
+
+      <label>
+        <span class="label-highlight">👤 What's Your Name?</span>
+        <span class="label-quirk">(Code name is fine 🦹🏻‍♂️ )</span>
+        <input type="text" name="name" id="name" placeholder="Your awesome name here..." required />
+      </label>
+
+      <label>
+        <span class="label-highlight">📅 Pick Your Redemption Date:</span>
+        <span class="label-quirk">(Choose wisely... 😎)</span>
+        <input type="date" name="redeem_date" id="redeem_date" min="2024-12-25" required />
+      </label>
+
+      <label>
+        <span class="label-highlight">💭 What's Your Wish?</span>
+        <span class="label-quirk">(Food? Adventure? Emotional support? 😂)</span>
+        <textarea
+          name="request"
+          placeholder="Be specific! Or don't... (but no cash, that's boring 💸)"
+          required
+        ></textarea>
+      </label>
+
+      <button type="submit">🚀 Claim My Voucher! 🚀</button>
+    </form>
+
+    <p class="footer hidden" id="thankYou">
+      🎄 Yay! Your voucher request has been sent 💖
+    </p>
+  </div>
+
+  <div class="snow-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/snow.js"></script>
+  <script src="../js/music.js"></script>
+</body>
+</html>
+

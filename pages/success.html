@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎄 Voucher Redeemed!</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="music-control">
+    <button id="musicToggle" class="music-btn">🔇</button>
+    <audio id="backgroundMusic" loop autoplay>
+      <source src="../assets/jingle-bell-rock.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+  <div class="card">
+    <h1>Voucher Redeemed!🎉</h1>
+    <h2>Your <span class="gradient-text">Jeorjie Voucher</span> is ready!</h2>
+
+    <div id="voucherInfo" class="voucher-info">
+      <p><strong>👤 Name:</strong> <span id="displayName"></span></p>
+      <p><strong>📅 Redemption Date:</strong> <span id="displayDate"></span></p>
+      <p><strong>💭 Your Request:</strong> <span id="displayRequest"></span></p>
+    </div>
+
+    <p class="subtitle">⚠️ Important: Click below to add it to your calendar! 📆</p>
+    <p class="required-note"> 🎅No calendar invite, no redemption! </p>
+
+    <button id="calendarBtn" class="calendar-button">
+      📅 Create Calendar Invite 🎁
+    </button>
+
+    <div id="confirmationMessage" class="confirmation-message hidden">
+      <p>✅ Calendar invite opened! Don't forget to save it in Google Calendar.</p>
+      <p class="footer">🎄 Your voucher is all set!💖</p>
+    </div>
+
+    <p class="footer hidden" id="initialFooter">
+      🎄 See you soon! 💖
+    </p>
+  </div>
+
+  <div class="snow-container"></div>
+  <script src="../js/success.js"></script>
+  <script src="../js/snow.js"></script>
+  <script src="../js/music.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎄 Surprise Gift!</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="snow-container"></div>
+
+  <!-- Hidden audio: starts on gift click -->
+  <audio id="backgroundMusic" loop>
+      <source src="../assets/jingle-bell-rock.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="landing-card">
+    <div class="floating-emoji" style="top: 10%; left: 5%; animation-delay: 0s;">🎄</div>
+    <div class="floating-emoji" style="top: 15%; right: 8%; animation-delay: 1s;">❄️</div>
+    <div class="floating-emoji" style="bottom: 20%; left: 10%; animation-delay: 2s;">🎅</div>
+    <div class="floating-emoji" style="bottom: 15%; right: 12%; animation-delay: 1.5s;">⭐</div>
+    <div class="floating-emoji" style="top: 5%; left: 50%; animation-delay: 0.5s;">🎊</div>
+    <div class="floating-emoji" style="bottom: 5%; left: 50%; animation-delay: 2.5s;">🎈</div>
+    
+    <h1 class="bounce-text">🎅 <span class="rainbow-text">Ho Ho Ho… Merry Clickmas!</span></h1>
+    <h2 class="sparkle-text">🎄 You have a gift from Jeorjie! 🎄</h2>
+    <p class="landing-subtitle">Yes, this is real. Yes, you should click the gift.</p>
+    
+    <div class="gift-container">
+      <div class="gift-glow"></div>
+      <div class="gift-ring"></div>
+      <div class="gift-icon shake" id="giftIcon">🎁</div>
+      <div class="sparkles">
+        <span class="sparkle">✨</span>
+        <span class="sparkle">✨</span>
+        <span class="sparkle">✨</span>
+        <span class="sparkle">✨</span>
+        <span class="sparkle">✨</span>
+        <span class="sparkle">✨</span>
+        <span class="sparkle">✨</span>
+        <span class="sparkle">✨</span>
+      </div>
+    </div>
+    
+    <p class="landing-hint"> seriously.. just click it.  👆</p>
+    
+    <div class="fun-facts">
+      <p class="fun-fact">🎁 <span class="fact-text">100% Real Voucher</span></p>
+      <p class="fun-fact">🎄 <span class="fact-text">Guaranteed Fun</span></p>
+      <p class="fun-fact">✨ <span class="fact-text">Limited Time Magic</span></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="../js/landing.js"></script>
+  <script src="../js/snow.js"></script>
+</body>
+</html>
+
