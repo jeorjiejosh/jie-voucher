@@ -50,7 +50,7 @@ jeorjie-voucher/
 
 - The form uses Netlify form handling (data-netlify="true")
 - Music playback requires user interaction (clicking the gift)
-- Calendar invite includes jeorjie24@gmail.com as an attendee
+- Calendar invite includes my email as an attendee
 - All paths are relative, so the folder structure must be maintained
 
 ## 🎨 Customization
